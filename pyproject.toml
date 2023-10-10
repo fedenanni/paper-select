@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "paper-select"
+version = "0.1.0"
+description = ""
+authors = ["fedenanni <nanni.federico@gmail.com>"]
+readme = "README.md"
+packages = [{include = "paper_select"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+feedparser = "^6.0.10"
+langchain = "^0.0.311"
+llama-index = "^0.8.42"
+requests = "^2.31.0"
+torch = "^2.1.0"
+transformers = "^4.34.0"
+
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.25.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
